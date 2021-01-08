@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <style>
 body, html {
   height: 100%;
@@ -29,7 +28,7 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Float four columns side by side */
+
 .column {
   float: left;
   width: 25%;
@@ -38,14 +37,14 @@ body, html {
 
 .row {margin: 0 -5px;}
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive columns */
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -54,7 +53,7 @@ body, html {
   }
 }
 
-/* Style the counter cards */
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
@@ -69,15 +68,15 @@ body, html {
   box-sizing: border-box;
 }
 
-/* Create three equal columns that floats next to each other */
+
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+  height: 300px;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
@@ -103,7 +102,7 @@ body, html {
 </style>
 <body>
 
-<!-- Links (sit on top) -->
+
 <div class="w3-top">
   <div class="w3-row w3-padding w3-black">
     <div class="w3-col s3">
@@ -121,7 +120,7 @@ body, html {
   </div>
 </div>
 
-<!-- Header with image -->
+
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
     <span class="w3-tag">Open from 10am to 10pm</span>
@@ -130,7 +129,7 @@ body, html {
 
 <div class="w3-content" style="max-width:1400px">
 
-<!-- Header -->
+
 <header class="w3-container w3-center w3-padding-32"> 
   <h1><b style="font-family:segoe script">ABOUT THE CAFE & BAKERY</b></h1>
   <p style="font-family:Times New Roman">Gotta Lotta Browniroma</p>
@@ -139,7 +138,7 @@ body, html {
 <div class="w3-row">
 
 <div class="w3-col l8 s12">
-  <!-- Blog entry -->
+
   <div class="w3-card-4 w3-margin w3-white">
     <img src="image/banner.jpeg" alt="Nature" style="width:100%">
     <div class="w3-container">
@@ -200,9 +199,6 @@ body, html {
   </div>
 </div>
 
-
-
-<!-- End page content -->
 </div>
 
 <footer class="w3-center w3-padding-48">
@@ -263,6 +259,8 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
+	
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 <script>
 const options = {
   bottom: '64px', // default: '32px'
