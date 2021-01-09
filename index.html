@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<title>Browniroma | Cafe & Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+h1, h6 {
+  letter-spacing: 5px;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("image/img1.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button {
+  background-color: #C7B06B;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.button:hover {
+  background-color: #F2E2B4;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="menu.html" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="contact.html" class="w3-button w3-block w3-black">CONTACT US</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 10am to 10pm</span>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+   <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col l6 w3-padding-large">
+     <img src="image/banner.jpeg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+	 <h1 class="w3-center">WELCOME TO BROWNIROMA!</h1><br>
+	  <h3 class="w3-center">Gotta Lotta, Browniroma</h3>
+      <p class="w3-center">Browniroma is a cafe and bakery that serves a variety of sweets and delicious food. We provide interesting menus that can be shared with friends and family. The prices charged are also reasonable and at the same time it is a favourite destination for young people nowadays.</p>
+    </div>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">ABOUT US</h1><br>
+	  <h3 class="w3-center">2015</h3>
+      <p class="w3-center">Browniroma is a cafe and bakery shop which is establish in Bandar Senawang in Negeri Sembilan. Browniroma was founded by Arinah Arifah and Nurul Aina.</p>
+	  <h3 class="w3-center">2016</h3>
+	  <p class="w3-center">Browniroma is the first cafe and bakery shop that have been promoted into 2 stars cafe within a year from the opening.</p>
+      	<center><a class="w3-button w3-black" href="about.html">Find out more</a></center>
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+	<h1 class="w3-center">PRODUCT VIDEO</h1>
+	 <center><video width="350" height="350" controls>
+ 	 <source src="video/promotional.mp4" type="video/mp4">
+	</video></center>
+    </div>
+  </div>
+  <hr>
+  
+<!-- End page content -->
+</div>
+
+<div>
+<footer class="w3-center w3-padding-48">
+<div class="row">
+  <div class="column" style="background-color: floralwhite;">
+    <h2><b>Find us at:</b></h2>
+	<h4><i class="fa fa-facebook"></i> Browniroma <br><i class="fa fa-instagram"></i> Browniroma <br><i class="fa fa-twitter"></i> Browniroma <br><i class="fa fa-copyright"></i> Copyright 2021 </h4>
+  </div>
+  
+  <div class="column" style="background-color:ivory;">
+    <h2><b>Our address:</b></h2>
+    <h3>Browniroma Cafe & Bakery</h3>
+    <p>JALAN BANDAR SENAWANG 19, Senawang, Seremban, Negeri Sembilan</p>
+  </div>
+  
+  <div class="column" style="background-color:cornsilk;">
+    <h2><b>Our email:</b></h2>
+    <h5><i class="material-icons">email</i> browniroma21@gmail.com</h5>
+  </div>
+</div>
+</div>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
